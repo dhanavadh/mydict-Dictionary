@@ -7,12 +7,24 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+    fontSize: {
+      'sm': '12px',
+      'base': '14px',
+      'xl': '16px',
+      '2xl': '20px',
+      '3xl': '28px',
+      '4xl': '38px',
+      '5xl': '50px',
+  },
+
+  extend: {
+      fontFamily: {
+        inter: ["'Kanit'", "sans-serif"],
+        gelasio: ["'Gelasio'", "serif"],
+        ibm: ["'IBM Plex Sans Thai'", "sans-serif"],
+        kanit: ["'Kanit'", "sans-serif"]
       },
-    },
+  },
   },
   plugins: [],
 };
